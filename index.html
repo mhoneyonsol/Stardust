@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Stardust</title>
+    <title>Unity Web Player | NES Adeventure</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=350 height=622 tabindex="-1" style="width: 350px; height: 622px; background: #000000"></canvas>
-    <script src="Build/prof.loader.js"></script>
+    <script src="Build/1402.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,12 +26,12 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/prof.data",
-        frameworkUrl: "Build/prof.framework.js",
-        codeUrl: "Build/prof.wasm",
+        dataUrl: "Build/1402.data",
+        frameworkUrl: "Build/1402.framework.js",
+        codeUrl: "Build/1402.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "NESTOR LAB",
-        productName: "Stardust",
+        productName: "NES Adeventure",
         productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
