@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=350 height=622 tabindex="-1" style="width: 350px; height: 622px; background: #000000"></canvas>
-    <script src="Build/1402.loader.js"></script>
+    <script src="Build/k.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/1402.data",
-        frameworkUrl: "Build/1402.framework.js",
-        codeUrl: "Build/1402.wasm",
+        dataUrl: "Build/k.data",
+        frameworkUrl: "Build/k.framework.js",
+        codeUrl: "Build/k.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "NESTOR LAB",
         productName: "NES Adeventure",
