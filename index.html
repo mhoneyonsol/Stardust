@@ -219,7 +219,7 @@ setTimeout(() => {
 
 
     <canvas id="unity-canvas" width=350 height=622 tabindex="-1" style="width: 350px; height: 622px; background: #000000"></canvas>
-    <script src="Build/game.loader.js"></script>
+    <script src="Build/k.loader.js"></script>
 
     <!-- Global JavaScript functions -->
     <script>
@@ -279,9 +279,9 @@ window.getTelegramUsername = function() {
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/game.data",
-        frameworkUrl: "Build/game.framework.js",
-        codeUrl: "Build/game.wasm",
+        dataUrl: "Build/k.data",
+        frameworkUrl: "Build/k.framework.js",
+        codeUrl: "Build/k.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "NESTOR LAB",
         productName: "NES Adventure",
