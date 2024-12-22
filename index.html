@@ -44,7 +44,7 @@
     close: false,
     stopOnFocus: false,
     offset: {
-    y: '60px' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+    y: '20px' // vertical axis - can be a number or a string indicating unity. eg: '2em'
   },
     style: {
         position: "absolute",
@@ -165,10 +165,10 @@ setTimeout(() => {
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     
     <style>
-      #pxl-counter {
+  #pxl-counter {
     position: absolute;
-    top:25px;
-    left: 50%;
+    top: 10px;
+    left: 53%;
     transform: translateX(-50%);
     background: rgb(255 255 255 / 18%);
     padding: 5px 10px;
@@ -180,28 +180,27 @@ setTimeout(() => {
     font-family: monospace;
     display: flex;
     backdrop-filter: blur(2px);
-    visibility: hidden; 
-    opacity: 0; 
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
-
 #username-display {
     position: absolute;
-    top:0px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10px;
+    left: 20px;
     color: #ffffff;
     font-size: 14px;
     font-family: monospace;
     font-weight: bold;
-    background: rgb(255 255 255 / 0%);
+    background: rgb(255 255 255 / 18%);
     padding: 5px 10px;
     border-radius: 10px;
     z-index: 1000;
     backdrop-filter: blur(2px);
-    visibility: hidden; 
-    opacity: 0; 
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    font-size: 1.2em;
 }
 
 .toastify {
