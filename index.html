@@ -230,6 +230,20 @@ let username = "Guest";
 try {
     const tg = window.Telegram.WebApp;
     tg.ready();
+
+    tg.disableVerticalSwipes();
+        
+        // Set colors
+        tg.setHeaderColor('#000000');
+        tg.setBottomBarColor('#000000');
+        
+        // Check for mobile device
+        const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        // Request fullscreen on mobile
+        if (isMobileDevice) {
+          tg.requestFullscreen();
+        }
     
     // Check if Telegram WebApp provides user data
     const userData = tg.initDataUnsafe?.user;
